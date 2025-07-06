@@ -1,0 +1,45 @@
+\documentclass[a4papper]{article}
+\usepackage[left=0.5cm,right=0.5cm,top=2cm,bottom=0.5cm,bindingoffset=0cm]{geometry}
+\usepackage{header-linear-algebra}
+
+\title{\Huge Линейная алгебра, Экзамен}
+
+\author{
+    Написано простым \href{https://t.me/Borislav_Timoshin}{BIT}-ом на основе лекций Гордеевой Н.М., \\ 
+    учебника Канатникова А.Н., Крищенко А.П., \\
+    методичек Власова П.А., Соболева С.К., \\
+    записей одногруппников и старшекурсников,\\ некоторых методичек Мехмата МГУ и, конечно, \\ с помощью одного загадочного, вдохновляющего на \\ изучение математики путешественника по млечному пути, \\
+    приносящего умные мысли в процессе \\
+    нашего общего мозгового штурма. \\
+    \href{https://github.com/BMSTU-BS1/Linear-Algebra-Exam}{GitHub}.
+}
+
+\date{} % Очищаем стандартную дату
+
+\begin{document}
+    \pagestyle{fancy}
+    \fancyhead[L]{\thepage}
+    \fancyhead[R]{\hyperlink{toc}{\large Содержание}}
+
+    \maketitle
+
+    \epigraph{
+        ``Верю, что проникну в пространство, невидимое доселе, и буду творить в нем чудеса!!''.
+    }{\rightline{{\rm --- BIT}}}
+
+
+    \vfill % Добавляем вертикальное заполнение, чтобы сдвинуть вниз
+
+    \begin{center}
+        \Large МГТУ им. Н.Э. Баумана, кафедра ФН1. \\
+        \emph{2024 — 2025}
+    \end{center}
+
+    \newpage
+        
+    \tableofcontents
+
+    \include{program/module1/module1}
+    \include{program/module2/module2}
+
+\end{document}

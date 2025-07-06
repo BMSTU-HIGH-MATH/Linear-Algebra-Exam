@@ -1,0 +1,56 @@
+\subsection{
+    Неравенство Коши-Буняковского (доказательство для $\mathcal{U}$).
+}
+
+
+\begin{proof}~
+    
+    При $\vec{y} = \vec{0}$ обе части неравенства равны нулю, значит, неравенство выполняется. Отбрасывая этот очевидный случай, будем считать, что $\vec{y} \ne \vec{0}$. Для любого комплексного числа $t$, в силу аксиомы 4 скалярного произведения, выполняется неравенство 
+
+    $$(\vec{x} + t\vec{y}, \vec{x} + t\vec{y}) \geq 0.$$
+
+    Преобразуем левую часть неравенства, используя аксиомы и свойства скалярного произведения:  
+    
+    \begin{align*}
+        (\vec{x} + t\vec{y}, \vec{x} + t\vec{y}) &= (\vec{x}, \vec{x}) + \underbrace{t(\vec{y}, \vec{x}) + \overline{t}(\vec{x}, \vec{y})}_{\star} + t \cdot \overline{t}(\vec{y}, \vec{y}) = \\
+        &= (\vec{x}, \vec{x}) + \underbrace{2 \text{Re}(t(\vec{y}, \vec{x}))}_{\star} + |t|^2(\vec{y}, \vec{y}) = \\
+        &= \underbrace{(\vec{y}, \vec{y})}_{\ne 0}|t|^2 + \underbrace{2|(\vec{x}, \vec{y})||t|}_{\star \star} + (\vec{x}, \vec{x}) \geq 0.
+    \end{align*}
+    
+    $\text{\textbf{Примечание} } (\star) \colon$ Пусть $t = p + iq, (\vec{y}, \vec{x}) = a + ib$, $\overline{t} = p - iq, \overline{(\vec{y}, \vec{x})} = a - ib$. Тогда
+
+    \begin{enumerate}
+        \item \begin{align*}
+            t(\vec{y}, \vec{x}) &+ \overline{t} \cdot (\vec{x}, \vec{y}) = t(\vec{y}, \vec{x}) + \overline{t} \cdot \overline{(\vec{y}, \vec{x})} = \\
+            &= (p + iq)(a + ib) + (p - iq)(a - ib) = \\ 
+            &= pa + pib + aiq - qb + pa - pib - aiq - qb = 2pa - 2qb = \\
+            &= 2 \cdot (pa - qb).
+        \end{align*}
+        \item \begin{align*}
+            2 \cdot \text{Re} (t \cdot (\vec{y}, \vec{x})) &= 2 \cdot \text{Re}((p + iq)(a + ib)) = \\
+            &= 2 \cdot \text{Re}(pa - qb + i(pb + aq)) = \\
+            &= 2 \cdot (pa - qb).
+        \end{align*}
+        \item \begin{align*}
+            t(\vec{y}, \vec{x}) + \overline{t} \cdot (\vec{x}, \vec{y}) = 2 \cdot \text{Re} (t \cdot (\vec{y}, \vec{x})).
+        \end{align*}
+    \end{enumerate}
+
+    $\text{\textbf{Примечание} } (\star \star) \colon$ Выберем $t$ так, чтобы $\arg{t} = -\arg{(\vec{y}, \vec{x})}$, тогда $\arg{(\vec{y}, \vec{x})} = -\arg{t}$.
+
+    \begin{gather*}
+        t = |t|e^{i\varphi} \\
+        \text{Так как }\arg{(\vec{y}, \vec{x})} = -\arg{t}, \text{ то } \\
+        (\vec{y}, \vec{x}) = |(\vec{x}, \vec{y})|e^{i(-\varphi)}.
+    \end{gather*}
+
+    Итак, 
+    
+    $$2 \cdot \text{Re} (t \cdot (\vec{y}, \vec{x})) = 2 \cdot \text{Re} (|t|e^{i\varphi} \cdot |(\vec{x}, \vec{y})|e^{-i\varphi}) = 2|t||(\vec{x}, \vec{y})|.$$
+
+    Мы получили квадратным трехчлен относительно параметра $|t|$, неотрицательный при всех действительных значениях параметра. Следовательно, его дискриминант равен нулю или отрицательный, т.е.
+
+    \begin{gather*}
+        |(\vec{x}, \vec{y})|^2 - (\vec{x}, \vec{x})(\vec{y}, \vec{y}) \leq 0.
+    \end{gather*}
+\end{proof}

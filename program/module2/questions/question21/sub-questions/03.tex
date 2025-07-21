@@ -8,12 +8,12 @@
 \end{theorem}
 
 \begin{proof}
-    Выберем произвольный вектор $\vec{x} = x_1\vec{b_1} + \ldots + x_n\vec{b_n}$. Его образом будет вектор
+    Выберем произвольный вектор $\vec{x} = x_1\vec{b}_1 + \ldots + x_n\vec{b}_n$. Его образом будет вектор
 
     \begin{align*}
-        \vec{y} &= \mathscr{A}\vec{x} =  \mathscr{A}(x_1\vec{b_1} + \ldots + x_n\vec{b_n}) = x_1(\mathscr{A}\vec{b_1}) + \ldots + x_n(\mathscr{A}\vec{b_n}) = \\
-        &= x_1(a_{11}\vec{b_1} + \ldots + a_{n1}\vec{b_n}) + \ldots + x_n(a_{1n}\vec{b_1} + \ldots + a_{nn}\vec{b_n}) = \\
-        &= (a_{11}x_1 + \ldots + a_{1n}x_n)\vec{b_1} + \ldots + (a_{n1}x_1 + \ldots + a_{nn}x_n)\vec{b_n} = \\
+        \vec{y} &= \mathscr{A}\vec{x} =  \mathscr{A}(x_1\vec{b}_1 + \ldots + x_n\vec{b}_n) = x_1(\mathscr{A}\vec{b}_1) + \ldots + x_n(\mathscr{A}\vec{b}_n) = \\
+        &= x_1(a_{11}\vec{b}_1 + \ldots + a_{n1}\vec{b}_n) + \ldots + x_n(a_{1n}\vec{b}_1 + \ldots + a_{nn}\vec{b}_n) = \\
+        &= (a_{11}x_1 + \ldots + a_{1n}x_n)\vec{b}_1 + \ldots + (a_{n1}x_1 + \ldots + a_{nn}x_n)\vec{b}_n = \\
         &= \begin{pmatrix}
             \vec{b}_1 & \ldots & \vec{b}_n
         \end{pmatrix} \cdot \begin{pmatrix} 
@@ -35,7 +35,7 @@
             a_{11} \thinspace \thinspace \ldots \thinspace \thinspace a_{1n} \\
             \ldots \ldots \ldots \\
             a_{n1} \thinspace \thinspace \ldots \thinspace \thinspace a_{nn}
-        \end{pmatrix}
+        \end{pmatrix} \cdot
         \begin{pmatrix} 
             x_1 \\
             \vdots \\

@@ -3,7 +3,8 @@ name: Build and Commit PDF
 on:
   push:
     paths:
-      - 'main.tex'          # Запуск при изменении LaTeX-файла
+      - 'main.tex'                     # сам main.tex
+      - 'program/**/*.tex'             # все вложенные .tex-файлы
   workflow_dispatch:        # Позволяет запуск вручную с GitHub
 
 jobs:
